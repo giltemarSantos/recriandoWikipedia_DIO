@@ -16,6 +16,12 @@ body, html {
 
 ul { list-style: none; padding-left: 5px; padding: 0; }
 a { color:blue; text-decoration: none; padding: 10px}
+a:hover
+{
+    color: #ff4500;
+    text-shadow: 0px 1px 10px rgba(48, 28, 22, 0.75);
+    font-style: italic;
+}
 .bar {
     background-color: #f9f9fb;
     padding:15px;
@@ -33,17 +39,79 @@ a { color:blue; text-decoration: none; padding: 10px}
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.search
+{
+    /* background-color: #f5a741dc; */
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+    margin-top: 15px;
+}
+
+.search input[type="text"]
+{
+    width: 300px; 
+    height: 20px; 
+    margin-right: 5px; 
+    padding-left: 5px;
+    
+    border: none;
+    border-bottom: 2px solid #d1d1d1;
+    outline: none;
+}
+
+.main p
+{
+    text-align: justify;
+}
+
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
 
-    background-color: #6d6b6b;
+    background-color: #20110e;
 }
+
+.footerArea
+{
+    width: 52rem;
+    min-height: 100px;
+
+    margin: 0 auto;
+    padding: 5px;
+
+    /* background-color: #ffffff8c; */
+    background-color: rgba(151, 151, 151, 0.25);
+    backdrop-filter: blur(15px);
+    color: #fff;
+}
+
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
+
+.returnMenuRight
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .sidebar {
+    border-right: solid 1px #cdcdcd;
+    /* height: 400px; */
+    /* background-color: #6aafc0; */
+}
+
+.sidebarRight 
+{
     border-right: solid 1px #cdcdcd;
     /* height: 400px; */
     /* background-color: #6aafc0; */
@@ -54,9 +122,20 @@ a { color:blue; text-decoration: none; padding: 10px}
     padding: 13px 1px;
 }
 
+.sidebarRight ul li
+{
+    padding: 13px 1px;
+}
+
 .sidebar ul li:hover
 {
     background-color: #dfb126d3;
+    transition: 0.2s ease-in;
+}
+
+.sidebarRight ul li:hover
+{
+    background-color: #615C61;
     transition: 0.2s ease-in;
 }
 
@@ -64,7 +143,20 @@ a { color:blue; text-decoration: none; padding: 10px}
 {
     color: #fff;
 }
+
 .sidebar ul li a
+{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;  
+}
+
+.sidebarRight ul li a:hover
+{
+    color: #fff;
+}
+
+.sidebarRight ul li a
 {
     font-size: 1.5rem;
     color: black;
