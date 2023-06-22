@@ -55,7 +55,7 @@ a:hover
 
 .search input[type="text"]
 {
-    width: 300px; 
+    width: 375px; 
     height: 20px; 
     margin-right: 5px; 
     padding-left: 5px;
@@ -63,6 +63,8 @@ a:hover
     border: none;
     border-bottom: 2px solid #d1d1d1;
     outline: none;
+
+    font-size: 16px;
 }
 
 .main p
@@ -71,7 +73,7 @@ a:hover
 }
 
 .footer {
-    min-height: 100px;
+    min-height: 150px;
     border-top: solid 1px #cdcdcd;
 
     background-color: #20110e;
@@ -80,7 +82,7 @@ a:hover
 .footerArea
 {
     width: 52rem;
-    min-height: 100px;
+    min-height: 150px;
 
     margin: 0 auto;
     padding: 5px;
@@ -89,6 +91,46 @@ a:hover
     background-color: rgba(151, 151, 151, 0.25);
     backdrop-filter: blur(15px);
     color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+
+.rSocial
+{
+    /* background-color: orange; */
+    flex-grow: 1;
+
+    max-width: 325px;
+    padding-top: 10px;
+    padding-left: 7px;
+}
+
+.infor
+{
+    background-color: rgba(255, 68, 0, 0.582);
+    /* opacity: 0.5; */
+    flex-grow: 2;
+    padding: 7px;
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+span a.lnk-Social
+{
+    padding-left: 0px; 
+    color: #fff
+}
+
+span a.lnk-Social:hover
+{ 
+    color: #ff4500;
+    text-shadow: 0px 1px 10px rgba(255, 255, 255, 0.75);
+    font-style: italic;
 }
 
 .anchors {
